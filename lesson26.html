@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 26 - Frontend & Backend Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 26: Frontend & Backend Integration</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>How Does the Frontend Communicate with the Backend?</h2>
+            <p>The frontend (user interface) sends requests to the backend (server) to retrieve or update data.</p>
+        </section>
+
+        <section>
+            <h2>1. REST API Communication</h2>
+            <p>The frontend makes HTTP requests to backend APIs using **fetch** or **Axios**.</p>
+            <pre>
+                <code>
+// Fetch data from backend (JavaScript)
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error:", error));
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Sending Data from Frontend to Backend</h2>
+            <p>To send data, use a POST request.</p>
+            <pre>
+                <code>
+// Sending data with fetch API
+fetch("https://api.example.com/data", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({ name: "Vien", age: 16 })
+})
+.then(response => response.json())
+.then(data => console.log("Success:", data))
+.catch(error => console.error("Error:", error));
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Connecting Frontend and Backend in a Web App</h2>
+            <p>A typical full-stack web application consists of:</p>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript (React, Vue, Angular).</li>
+                <li><strong>Backend:</strong> Node.js, Python, Java.</li>
+                <li><strong>Database:</strong> MySQL, MongoDB.</li>
+            </ul>
+        </section>
+
+        <p>Next, we’ll learn about **Cloud & Hosting!**</p>
+
+        <div class="lesson-nav">
+            <a href="lesson25.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson27.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

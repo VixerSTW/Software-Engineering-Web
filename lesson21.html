@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 21 - SQL Data Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 21: SQL Data Manipulation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Modifying Data in SQL</h2>
+            <p>SQL provides commands to insert, update, and delete data in a database.</p>
+        </section>
+
+        <section>
+            <h2>1. INSERT INTO - Adding Data</h2>
+            <pre>
+                <code>
+INSERT INTO users (name, email) 
+VALUES ('Vien', 'vien@example.com');
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. UPDATE - Modifying Existing Data</h2>
+            <pre>
+                <code>
+UPDATE users 
+SET email = 'newemail@example.com' 
+WHERE name = 'Vien';
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. DELETE - Removing Data</h2>
+            <pre>
+                <code>
+DELETE FROM users WHERE name = 'Vien';
+                </code>
+            </pre>
+        </section>
+
+        <p>In the next lesson, we’ll cover SQL Transactions & Indexing!</p>
+
+        <div class="lesson-nav">
+            <a href="lesson20.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson22.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

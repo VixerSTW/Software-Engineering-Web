@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11 - Loops and Iterations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 11: Loops and Iterations</h2>
+            <p>Loops allow you to repeat a block of code multiple times. This is useful when working with large amounts of data or automating repetitive tasks.</p>
+
+            <h3>1. Types of Loops</h3>
+
+            <h4>1. For Loop</h4>
+            <p>The **for loop** is used when you know how many times you want to repeat an action.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+for i in range(5):
+    print("Hello, Vien!")
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+for (let i = 0; i < 5; i++) {
+    console.log("Hello, Vien!");
+}
+            </pre>
+
+            <h4>Java Example:</h4>
+            <pre>
+for (int i = 0; i < 5; i++) {
+    System.out.println("Hello, Vien!");
+}
+            </pre>
+
+            <h4>2. While Loop</h4>
+            <p>The **while loop** runs as long as a condition is **true**.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+count = 0
+while count < 5:
+    print("Counting:", count)
+    count += 1
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+let count = 0;
+while (count < 5) {
+    console.log("Counting:", count);
+    count++;
+}
+            </pre>
+
+            <h4>Java Example:</h4>
+            <pre>
+int count = 0;
+while (count < 5) {
+    System.out.println("Counting: " + count);
+    count++;
+}
+            </pre>
+
+            <h4>3. Do-While Loop</h4>
+            <p>A **do-while loop** runs at least once, even if the condition is **false**.</p>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+let count = 0;
+do {
+    console.log("Counting:", count);
+    count++;
+} while (count < 5);
+            </pre>
+
+            <h3>2. Why Use Loops?</h3>
+            <ul>
+                <li>To repeat actions multiple times.</li>
+                <li>To automate tasks (e.g., processing lists of data).</li>
+                <li>To make code **more efficient and readable**.</li>
+            </ul>
+
+            <p>Loops are very powerful! In the next lesson, we will learn about **Functions and Methods**!</p>
+
+            <div class="lesson-nav">
+    <a href="lesson10.html" class="lesson-btn">← Previous Lesson</a>
+    <a href="lesson12.html" class="lesson-btn">Next Lesson →</a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>

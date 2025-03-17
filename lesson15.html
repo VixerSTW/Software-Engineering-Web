@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 15 - Working with Files and Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 15: Working with Files and Data</h2>
+            <p>Many applications need to store and retrieve data from files. This lesson covers how to work with files in different programming languages.</p>
+
+            <h3>1. Reading and Writing Files</h3>
+            <p>Most programming languages allow you to open, read, and write files.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+# Writing to a file
+with open("data.txt", "w") as file:
+    file.write("Hello, Vien!")
+
+# Reading from a file
+with open("data.txt", "r") as file:
+    content = file.read()
+    print(content)
+            </pre>
+
+            <h4>JavaScript Example (Node.js):</h4>
+            <pre>
+const fs = require('fs');
+
+// Writing to a file
+fs.writeFileSync("data.txt", "Hello, Vien!");
+
+// Reading from a file
+let content = fs.readFileSync("data.txt", "utf-8");
+console.log(content);
+            </pre>
+
+            <h4>Java Example:</h4>
+            <pre>
+import java.io.*;
+
+public class FileExample {
+    public static void main(String[] args) throws IOException {
+        // Writing to a file
+        FileWriter writer = new FileWriter("data.txt");
+        writer.write("Hello, Vien!");
+        writer.close();
+
+        // Reading from a file
+        BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
+        System.out.println(reader.readLine());
+        reader.close();
+    }
+}
+            </pre>
+
+            <h3>2. Why Work with Files?</h3>
+            <ul>
+                <li>To **store and retrieve** user data.</li>
+                <li>To process **large datasets** efficiently.</li>
+                <li>To save settings and configurations for applications.</li>
+            </ul>
+
+            <p>Now that you know how to work with files, let’s move on to **Lesson 16: Introduction to Web Development!**</p>
+
+            <div class="lesson-nav">
+    <a href="lesson14.html" class="lesson-btn">← Previous Lesson</a>
+    <a href="lesson16.html" class="lesson-btn">Next Lesson →</a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>

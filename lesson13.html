@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13 - Lists, Arrays, and Dictionaries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 13: Lists, Arrays, and Dictionaries</h2>
+            <p>In programming, we often need to store multiple values together. Lists, arrays, and dictionaries help us manage data efficiently.</p>
+
+            <h3>1. Lists (Python) and Arrays (JavaScript & Java)</h3>
+            <p>Lists and arrays store multiple values in a single variable.</p>
+
+            <h4>Python Example (Lists):</h4>
+            <pre>
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Outputs: apple
+            </pre>
+
+            <h4>JavaScript Example (Arrays):</h4>
+            <pre>
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]); // Outputs: apple
+            </pre>
+
+            <h4>Java Example (Arrays):</h4>
+            <pre>
+String[] fruits = {"apple", "banana", "cherry"};
+System.out.println(fruits[0]); // Outputs: apple
+            </pre>
+
+            <h3>2. Dictionary (Python) and Objects (JavaScript)</h3>
+            <p>Dictionaries store data in **key-value pairs**, making it easy to look up values.</p>
+
+            <h4>Python Example (Dictionary):</h4>
+            <pre>
+person = {"name": "Vien", "age": 16}
+print(person["name"])  # Outputs: Vien
+            </pre>
+
+            <h4>JavaScript Example (Object):</h4>
+            <pre>
+let person = { name: "Vien", age: 16 };
+console.log(person.name); // Outputs: Vien
+            </pre>
+
+            <h3>3. Adding and Removing Elements</h3>
+
+            <h4>Python Example:</h4>
+            <pre>
+fruits.append("orange")  # Adds an item
+fruits.remove("banana")  # Removes an item
+print(fruits)
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+fruits.push("orange"); // Adds an item
+fruits.splice(1, 1); // Removes "banana"
+console.log(fruits);
+            </pre>
+
+            <h3>4. Why Use Lists, Arrays, and Dictionaries?</h3>
+            <ul>
+                <li>They help organize and manage data efficiently.</li>
+                <li>They allow easy retrieval and modification of data.</li>
+                <li>They are widely used in real-world applications (e.g., databases, APIs).</li>
+            </ul>
+
+            <p>Now that you understand lists, arrays, and dictionaries, let's move on to **Lesson 14: Object-Oriented Programming (OOP) Basics!**</p>
+
+            <div class="lesson-nav">
+    <a href="lesson12.html" class="lesson-btn">← Previous Lesson</a>
+    <a href="lesson14.html" class="lesson-btn">Next Lesson →</a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>

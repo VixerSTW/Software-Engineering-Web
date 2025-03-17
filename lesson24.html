@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 24 - RESTful APIs & CRUD Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 24: RESTful APIs & CRUD Operations</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>What is a RESTful API?</h2>
+            <p>A RESTful API (Representational State Transfer) allows applications to communicate over the internet using HTTP requests.</p>
+        </section>
+
+        <section>
+            <h2>1. HTTP Methods in REST APIs</h2>
+            <ul>
+                <li><strong>GET:</strong> Retrieve data from the server.</li>
+                <li><strong>POST:</strong> Send new data to the server.</li>
+                <li><strong>PUT:</strong> Update existing data.</li>
+                <li><strong>DELETE:</strong> Remove data from the server.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. CRUD Operations</h2>
+            <p>CRUD (Create, Read, Update, Delete) represents the basic actions used in database operations.</p>
+        </section>
+
+        <section>
+            <h2>3. Example REST API Request</h2>
+            <pre>
+                <code>
+# Fetching data from an API (JavaScript)
+fetch("https://api.example.com/users")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error:", error));
+                </code>
+            </pre>
+        </section>
+
+        <p>In the next lesson, we’ll cover authentication & security (JWT, OAuth).</p>
+
+        <div class="lesson-nav">
+            <a href="lesson23.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson25.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

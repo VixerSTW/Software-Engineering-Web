@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 20 - Database Relationships and JOINs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 20: Database Relationships and JOINs</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Understanding Database Relationships</h2>
+            <p>Databases use relationships to connect different tables, making data retrieval more efficient and meaningful.</p>
+        </section>
+
+        <section>
+            <h2>Types of Relationships</h2>
+            <ul>
+                <li><strong>One-to-One:</strong> Each record in Table A is related to one record in Table B.</li>
+                <li><strong>One-to-Many:</strong> A single record in Table A relates to multiple records in Table B.</li>
+                <li><strong>Many-to-Many:</strong> Multiple records in Table A relate to multiple records in Table B (requires a junction table).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Using JOINs to Query Related Data</h2>
+            <p>SQL provides different types of JOINs to combine data from multiple tables.</p>
+            
+            <h3>Example: INNER JOIN</h3>
+            <pre>
+                <code>
+SELECT users.name, orders.amount 
+FROM users
+INNER JOIN orders ON users.id = orders.user_id;
+                </code>
+            </pre>
+
+            <h3>Other Types of JOINs</h3>
+            <ul>
+                <li><strong>LEFT JOIN:</strong> Retrieves all records from the left table and matching records from the right table.</li>
+                <li><strong>RIGHT JOIN:</strong> Retrieves all records from the right table and matching records from the left table.</li>
+                <li><strong>FULL JOIN:</strong> Retrieves all records when there is a match in either table.</li>
+            </ul>
+        </section>
+
+        <p>In the next lesson, we’ll explore SQL queries for data manipulation!</p>
+
+        <div class="lesson-nav">
+            <a href="lesson19.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson21.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

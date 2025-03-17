@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 25 - Authentication & Security (JWT, OAuth)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 25: Authentication & Security (JWT, OAuth)</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Why is Authentication Important?</h2>
+            <p>Authentication ensures that only authorized users can access certain parts of an application.</p>
+        </section>
+
+        <section>
+            <h2>1. What is JWT (JSON Web Token)?</h2>
+            <p>JWT is a compact, self-contained way of securely transmitting information between parties as a JSON object.</p>
+            <pre>
+                <code>
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+{
+  "user": "Vien",
+  "role": "admin"
+}
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. What is OAuth?</h2>
+            <p>OAuth is an authentication framework that allows users to log in using external services like Google, Facebook, or GitHub.</p>
+        </section>
+
+        <section>
+            <h2>3. Example of JWT Authentication</h2>
+            <pre>
+                <code>
+// Creating a JWT token in Node.js
+const jwt = require('jsonwebtoken');
+const token = jwt.sign({ user: "Vien" }, "secret_key", { expiresIn: "1h" });
+
+console.log(token);
+                </code>
+            </pre>
+        </section>
+
+        <p>Next, we’ll explore **Frontend & Backend Integration!**</p>
+
+        <div class="lesson-nav">
+            <a href="lesson24.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson26.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 - Conditional Statements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 10: Conditional Statements</h2>
+            <p>Conditional statements allow programs to make decisions based on conditions. They help control the flow of execution in a program.</p>
+
+            <h3>1. What are Conditional Statements?</h3>
+            <p>Conditional statements check whether a condition is **true** or **false** and execute different code accordingly.</p>
+
+            <h3>2. Types of Conditional Statements</h3>
+
+            <h4>1. if Statement</h4>
+            <p>Executes a block of code if the condition is **true**.</p>
+            <pre>
+# Python Example
+age = 18
+if age >= 18:
+    print("You are an adult")
+            </pre>
+
+            <pre>
+// JavaScript Example
+let age = 18;
+if (age >= 18) {
+    console.log("You are an adult");
+}
+            </pre>
+
+            <h4>2. if-else Statement</h4>
+            <p>Executes one block if the condition is **true**, otherwise executes another block.</p>
+            <pre>
+# Python Example
+age = 16
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+            </pre>
+
+            <pre>
+// JavaScript Example
+let age = 16;
+if (age >= 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are a minor");
+}
+            </pre>
+
+            <h4>3. if-elif-else Statement (Python only)</h4>
+            <p>Checks multiple conditions.</p>
+            <pre>
+age = 10
+if age >= 18:
+    print("You are an adult")
+elif age >= 13:
+    print("You are a teenager")
+else:
+    print("You are a child")
+            </pre>
+
+            <h4>4. Switch Statement (JavaScript & Java)</h4>
+            <p>A switch statement is used when checking multiple conditions.</p>
+            <pre>
+// JavaScript Example
+let grade = "B";
+switch (grade) {
+    case "A":
+        console.log("Excellent!");
+        break;
+    case "B":
+        console.log("Good job!");
+        break;
+    case "C":
+        console.log("You can do better.");
+        break;
+    default:
+        console.log("Invalid grade");
+}
+            </pre>
+
+            <h3>3. Why Use Conditional Statements?</h3>
+            <ul>
+                <li>They allow decision-making in programs.</li>
+                <li>They help create interactive applications.</li>
+                <li>They make programs more dynamic and flexible.</li>
+            </ul>
+
+            <p>Now that you know how to use conditional statements, let's move on to **Lesson 11: Loops and Iterations**!</p>
+
+            <div class="lesson-nav">
+    <a href="lesson9.html" class="lesson-btn">← Previous Lesson</a>
+    <a href="lesson11.html" class="lesson-btn">Next Lesson →</a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>

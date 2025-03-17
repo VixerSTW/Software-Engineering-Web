@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 14 - Object-Oriented Programming (OOP) Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 14: Object-Oriented Programming (OOP) Basics</h2>
+            <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of **objects**. It helps organize code in a way that models real-world entities.</p>
+
+            <h3>1. What is OOP?</h3>
+            <p>OOP is based on four main principles:</p>
+            <ul>
+                <li><strong>Encapsulation:</strong> Bundling data and methods together.</li>
+                <li><strong>Inheritance:</strong> Creating new classes from existing ones.</li>
+                <li><strong>Polymorphism:</strong> Using the same method in different ways.</li>
+                <li><strong>Abstraction:</strong> Hiding complex implementation details.</li>
+            </ul>
+
+            <h3>2. Classes and Objects</h3>
+            <p>A **class** is a blueprint for creating objects, and an **object** is an instance of a class.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+
+vien = Person("Vien", 16)
+print(vien.greet())  # Outputs: Hello, my name is Vien
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        return `Hello, my name is ${this.name}`;
+    }
+}
+
+let vien = new Person("Vien", 16);
+console.log(vien.greet()); // Outputs: Hello, my name is Vien
+            </pre>
+
+            <h4>Java Example:</h4>
+            <pre>
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    String greet() {
+        return "Hello, my name is " + name;
+    }
+
+    public static void main(String[] args) {
+        Person vien = new Person("Vien", 16);
+        System.out.println(vien.greet()); // Outputs: Hello, my name is Vien
+    }
+}
+            </pre>
+
+            <h3>3. Why Use OOP?</h3>
+            <ul>
+                <li>It makes code **organized and reusable**.</li>
+                <li>It models real-world objects and relationships.</li>
+                <li>It improves **scalability and maintainability** of projects.</li>
+            </ul>
+
+            <p>Now that you understand OOP basics, let's move on to **Lesson 15: Working with Files and Data!**</p>
+
+            <a href="lesson13.html" class="prev-lesson">← Previous Lesson</a>
+            <a href="lesson15.html" class="next-lesson">Next Lesson →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>

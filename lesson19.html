@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 19 - Database Schema Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 19: Database Schema Design</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="practice.html">Practice</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>What is a Database Schema?</h2>
+            <p>A database schema defines the structure of a database, including tables, columns, data types, and relationships.</p>
+        </section>
+
+        <section>
+            <h2>Key Concepts of Database Schema Design</h2>
+            <ul>
+                <li><strong>Tables:</strong> Store data in rows and columns.</li>
+                <li><strong>Primary Keys:</strong> Unique identifiers for each record.</li>
+                <li><strong>Foreign Keys:</strong> Links between tables to enforce relationships.</li>
+                <li><strong>Normalization:</strong> Organizing data to reduce redundancy.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example Database Schema</h2>
+            <pre>
+                <code>
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE orders (
+    id INT PRIMARY KEY,
+    user_id INT,
+    amount DECIMAL(10,2),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+                </code>
+            </pre>
+        </section>
+
+        <p>In the next lesson, we’ll learn about database relationships and how to use JOINs!</p>
+
+        <div class="lesson-nav">
+            <a href="lesson18.html" class="lesson-btn">← Previous Lesson</a>
+            <a href="lesson20.html" class="lesson-btn">Next Lesson →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+
+</body>
+</html>

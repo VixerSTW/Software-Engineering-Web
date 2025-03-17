@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12 - Functions and Methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Software Engineering Lessons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 12: Functions and Methods</h2>
+            <p>Functions are reusable blocks of code that help organize and simplify your program. Methods are functions that belong to an object.</p>
+
+            <h3>1. What is a Function?</h3>
+            <p>A function is a block of code that only runs when it is called. Functions can take inputs (parameters) and return outputs.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+def greet(name):
+    return "Hello, " + name
+
+print(greet("Vien"))
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+function greet(name) {
+    return "Hello, " + name;
+}
+
+console.log(greet("Vien"));
+            </pre>
+
+            <h4>Java Example:</h4>
+            <pre>
+public class Main {
+    static String greet(String name) {
+        return "Hello, " + name;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(greet("Vien"));
+    }
+}
+            </pre>
+
+            <h3>2. Function Parameters and Return Values</h3>
+            <p>Functions can accept parameters (inputs) and return values (outputs).</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+def add(a, b):
+    return a + b
+
+print(add(3, 5))
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(3, 5));
+            </pre>
+
+            <h3>3. What is a Method?</h3>
+            <p>Methods are functions that are tied to objects. For example, strings and lists have built-in methods.</p>
+
+            <h4>Python Example:</h4>
+            <pre>
+text = "hello"
+print(text.upper())  # Outputs: HELLO
+            </pre>
+
+            <h4>JavaScript Example:</h4>
+            <pre>
+let text = "hello";
+console.log(text.toUpperCase()); // Outputs: HELLO
+            </pre>
+
+            <h3>4. Why Use Functions?</h3>
+            <ul>
+                <li>They make your code **reusable**.</li>
+                <li>They improve **readability and organization**.</li>
+                <li>They help reduce **repetition in code**.</li>
+            </ul>
+
+            <p>Now that you understand functions, let's move on to **Lesson 13: Lists, Arrays, and Dictionaries!**</p>
+
+            <div class="lesson-nav">
+    <a href="lesson11.html" class="lesson-btn">← Previous Lesson</a>
+    <a href="lesson13.html" class="lesson-btn">Next Lesson →</a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vien's Software Engineering Guide</p>
+    </footer>
+</body>
+</html>
